@@ -1,0 +1,125 @@
+<!--
+Autor: Jaqueline García Jiménez
+       Isabel Cristina Acosta García
+Fecha de creación: Marzo 21/2014
+
+Fecha de ultima modificación: Marzo 28/2014
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+<style type="text/css">@import url("calendar-blue.css");</style>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="formulario.js"></script><!--Con esto se llama el documento .js-->
+<script type="text/javascript" src="calendar.js"></script><!--Estos archivos son para el calendario de la fecha de nacimiento-->
+<script type="text/javascript" src="calendar-es.js"></script>
+<script type="text/javascript" src="calendar-setup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+	Calendar.setup({
+		inputField: "fecha",
+		ifFormat: "%d / %m / %Y",
+		button: "selector"
+		});
+		}
+
+</script>
+
+    </head>
+    <body>
+        <div id="todo">
+        
+        
+        <div id="formulario" >
+        
+        
+        <fieldset>
+         <legend>Formulario</legend>
+        
+        <form name="formulario" onsubmit="return validar_formulario();">
+           
+      <br>
+         	  <label>Nombres:</label>
+              <input id="nombre" name="nombre" type = "text" autofocus onfocus="restaurar()"><label id="aviso1"></label>
+              <br><br>
+                            
+             <label>Apellidos:</label> 
+              <input type = "text" id="apellido" name="apellido" onfocus="restaurar()"><label id="aviso2"></label>
+              <br><br>
+              
+              <label>Fecha de nacimiento:</label>
+              <input type="text" name="date" id="fecha" readonly onfocus="restaurar()"/>
+              <img src="calendario.gif" id="selector"/><label id="aviso3"></label><br><br>
+              
+              <label>Cedula:</label> 
+              <input id="cedula" type = "text" name = "cedula" onfocus="restaurar()"><label id="aviso4"></label><br><br>
+              
+              <label>Sexo:</label> 
+              <input type="radio" name="gene" value="femenino"> <label>Femenino</label>
+              <input type="radio" name="gene" value="masculino" onfocus="restaurar()"> <label>Masculino</label>
+              <label id="aviso5"></label>
+              <br><br>
+              
+              <label>Teléfono:</label>
+              <input type = "text" name = "telefono" onfocus="restaurar()"><label id="aviso6"></label><br><br>
+              
+              <label>Celular:</label>
+              <input type = "text" name = "celular" onfocus="restaurar()"><label id="aviso7"></label><br><br>
+              
+              <label>Idioma:</label>
+              <input type = "text" name = "idioma" onfocus="restaurar()"><label id="aviso8"></label><br><br>
+              
+              <label>Ciudad:</label>
+              <input type = "text" name = "ciudad" onfocus="restaurar()"><label id="aviso9"></label><br><br>
+              
+              <label>País:</label>
+              <input type = "text" name = "pais" onfocus="restaurar()"><label id="aviso10"></label><br><br>
+              
+              <label>Ocupación: </label>
+              <select name="ocupacion" id="ocupacion" onfocus="restaurar()">
+              	<option value="">--seleccione una ocupacion--</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="ama de casa">Ama de casa</option>
+                <option value="empleado">Empleado</option>
+                <option value="independiente">Independiente</option>
+                <option value="pensionado">Pensionado</option>
+              </select><label id="aviso11"></label>
+              <br><br>
+              
+              <label>E-mail:</label>
+              <input type = "text" name = "email" onfocus="restaurar()"><label id="aviso12"></label><br><br>
+              
+              <label>Contraseña:</label>
+              <input type = "password" name = "clave1" onfocus="restaurar()"><label id="aviso14"></label><br><br>
+              
+              <label>Confirmación de contraseña:</label>
+              <input type = "password" name = "clave2" onfocus="restaurar()"><label id="aviso13"></label>
+              
+          
+          
+          <p>
+          <br>	
+            <input align="central" class="button1" type = "submit" value = "Enviar" onclick="ValidarForm();">
+            <br>
+          </p>
+        </form>
+        </fieldset>
+		
+        
+       <p id="aviso"></p>
+        
+        </div>
+        
+        <div id="pie">><img src="logovalletulua.png" width="193" height="62"  alt=""/><br>Jaqueline García Jiménez 1153622<br>
+        Isabel Cristina acosta 1053634
+        </div>
+        </div>
+        
+        
+    </body>
+</html>
+

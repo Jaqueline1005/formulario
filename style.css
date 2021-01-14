@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+#todo {
+	width: 900px;
+	height: auto;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	text-align: left;
+}
+
+#cabeza {
+	height: 150px;
+	width: 800px;
+	background-color: #9CF;
+}
+
+body{
+		
+		background-attachment:fixed;
+		background-image:url(img/textura-papel.jpg);
+	 }
+	 
+label{
+	font-family: "Lucida Sans";
+	font-style: bold type;
+	font-size: large;
+}
+
+
+#formulario{
+	height: auto;
+	width: 800px;
+	background-color: #FFF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	line-height: normal;
+	text-decoration: none;
+	
+}
+
+#pie{
+	float:inherit;
+	height: 100px;
+	width: 800px;
+}
+
+.button1 {
+	width: 100px;
+	bottom: 20px;
+	background:#FFD700;
+	height: 30px;
+	margin-right:auto;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1p solid #fff;
+	float: none;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font: bold 12px/12px HelveticaNeue, Arial;
+	padding: 8px 11px;
+	text-decoration: none;
+	text-align: center;
+	right: 400px;
+}
+
+.button1:hover {
+	background:#9CF;
+	color:#fff;
+	text-align:center;
+}
+
+form.elegante input {
+  padding: .2em;
+}
+input{
+	font-family: "Arial";
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 10px; 
+	left: 400px;
+}
+
+div {
+  margin: .10em 0;
+}
+
+
+
+.textarea:focus, input:focus {
+	border: 2px solid #09C;
+	
+	}
+	
+		#pie{
+	width: 800px;
+	height: 200px;
+	text-align: center;
+	font-family: "Lucida Handwriting";
+	background-color: #FFF;
+	background:rgba(255, 255, 255, 0.1);
+		
+}
+	
